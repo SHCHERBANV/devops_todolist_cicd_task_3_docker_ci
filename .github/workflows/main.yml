@@ -54,3 +54,9 @@ jobs:
         with:
           name: python-artifacts
           path: .
+
+  build-image:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4

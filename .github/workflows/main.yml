@@ -56,6 +56,7 @@ jobs:
           path: .
 
   build-image:
+    needs: ['python-ci']
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

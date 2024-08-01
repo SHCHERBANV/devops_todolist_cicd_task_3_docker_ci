@@ -1,6 +1,6 @@
 name: python-deployment
 
-run-name: ${{ github.actor }} - ${{ github.ref_name}} -${{ github.sha }}
+run-name: ${{ github.actor }} - ${{ github.ref_name}} - ${{ github.sha }}
 
 on:
   push:
@@ -55,7 +55,6 @@ jobs:
         with:
           name: python-artifacts
           path: .
-
 
   build-image:
     needs: ['python-ci']
